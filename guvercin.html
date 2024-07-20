@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Guvercin International Trading</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="abstract" content="Güvercın"/>
+    <meta name="author" content="Merve KOCABAS"/>
+    <meta name="description" content="Better health, better life, better you"/>
+    <meta name="keywords" content="health, life, you"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#fff" />
+    <link rel="icon" href="/favicon/favicon.ico">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <link rel="canonical" href="www.guvercinltd.com.tr/"/>
+    <link rel="alternate" hreflang="tr" href="www.guvercinltd.com.tr/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com.tr">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="guvercin.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // Mobil Nav
+         function myFunction(x) {
+          x.classList.toggle("change");
+        }
+
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+
+        $(document).ready(function(){
+            $(".hakkimizdaClose").click(function(){
+            document.getElementById("myNav").style.width = "0%";
+            });
+
+            $(".hizmetlerimizClose").click(function(){
+                
+                document.getElementById("myNav").style.width = "0%";
+            });
+
+            $(".iletisimClose").click(function(){
+                document.getElementById("myNav").style.width = "0%";
+            });
+
+            $(".iconNav").click(function(){
+                document.getElementById("myNav").style.width = "0%";
+            });
+        });
+
+        // List Grup
+        $(document).ready(function(){
+            $("#vizyonumuzTextOpen").hide();
+            $("#misyonumuzTextOpen").hide();
+            $("#partnersTextOpen").hide();
+            $("#hakkimizdaTextOpen").show();
+            var lastClicked = null;
+
+            $(".hakkimizdaOpen").click(function(){
+                if(lastClicked !== this){
+                $(this).addClass("active");
+                $(".vizyonumuzOpen, .misyonumuzOpen, .partnersOpen").removeClass("active");
+                $("#hakkimizdaTextOpen").toggle();
+                $("#vizyonumuzTextOpen").hide();
+                $("#misyonumuzTextOpen").hide();
+                $("#partnersTextOpen").hide();
+                lastClicked = this;
+                }
+            });
+            $(".vizyonumuzOpen").click(function(){
+                if(lastClicked !== this){
+                $(this).addClass("active");
+                $(".hakkimizdaOpen, .misyonumuzOpen, .partnersOpen").removeClass("active");
+                $("#vizyonumuzTextOpen").toggle();
+                $("#misyonumuzTextOpen").hide();
+                $("#hakkimizdaTextOpen").hide();
+                $("#partnersTextOpen").hide();
+                lastClicked = this;
+                }
+            });
+            $(".misyonumuzOpen").click(function(){
+                if(lastClicked !== this){
+                $(this).addClass("active");
+                $(".hakkimizdaOpen, .vizyonumuzOpen, .partnersOpen").removeClass("active");
+                $("#misyonumuzTextOpen").toggle();
+                $("#vizyonumuzTextOpen").hide();
+                $("#hakkimizdaTextOpen").hide();
+                $("#partnersTextOpen").hide();
+                lastClicked = this;
+                }
+            });
+            $(".partnersOpen").click(function(){
+                if(lastClicked !== this){
+                $(this).addClass("active");
+                $(".hakkimizdaOpen, .vizyonumuzOpen, .misyonumuzOpen").removeClass("active");
+                $("#partnersTextOpen").toggle();
+                $("#vizyonumuzTextOpen").hide();
+                $("#hakkimizdaTextOpen").hide();
+                $("#misyonumuzTextOpen").hide();
+                lastClicked = this;
+                }
+            });
+        });
+ </script>
+</head>
+<body>
+    <header id="myHeader" class="displayNetNonePc backHeader">
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col-md-11">
+                    <a href="/index.html" class="brand-logo">
+                    <figure>
+                        <img class="logo" src="/image/logo.png" alt="Guvercin International Trading">
+                    </figure>
+                    </a>
+                </div>
+               <div class="mobilHeader col-md-1 d-flex" style="margin-top: -1.5rem;">
+                    <nav class="navbar">
+                        <div class="navbar-container container" style="height: 50px;">
+                            <div class="tr-en noWrap"><a class="tr-eng tr-eng-mobil" href="trGuvercin.html">TR | ENG</a></div>
+                            <input type="checkbox" name="" id="checkbox">
+                            <div class="hamburger-lines">
+                                <span class="line line1"></span>
+                                <span class="line line2"></span>
+                                <span class="line line3"></span>
+                           </div>
+                            <ul class="menu-items" id="menu" style="text-align: right; padding-right: 6rem; margin-top: -4rem; height: 105vh;">
+                            <li class="paddingBottom1"><a class="marginLeft1-5 tr-eng tr-eng-mobil" href="english.html">TR | ENG</a></li>
+                            <li class="paddingBottom1 paddingTop2"><a href="/index.html" class="hover">Home</a></li>
+                            <li class="paddingBottom1 hakkimizdaClose"><a href="guvercin.html" class="hover">Güvercin</a></li>
+                            <li class="paddingBottom1 hizmetlerimizClose"><a href="products.html" class="hover">Products</a></li>
+                            <li class="paddingBottom1 hizmetlerimizClose"><a href="careers.html" class="hover">Careers</a></li>
+                            <li class="paddingBottom1 iletisimClose"><a href="news.html" class="hover">News</a></li>
+                            <li class="paddingBottom2 iletisimClose"><a href="contact.html" class="hover">Contact</a></li>
+                            <div class="borderBottom"></div>
+                            </ul>
+                        </div>
+                    </nav>
+               </div>
+            </div>
+        </div>
+    </header>
+    <section class="bannerGuvercin" style="position: relative;">
+        <div class="container-xxl d-flex marginLeftRight bannerContainer justify-content-center ">
+            <figure>
+                <img class="bannerImage" src="./image/bannerGuvercin.png" alt="banner">
+            </figure>
+        </div>
+    </section>
+    <section class="paddingLeftRight8 paddingTop-7 hakkimizda" id="hakkimizda">
+        <div class="container-xxl d-flex marginLeftRight justify-content-center">
+         <div class="row paddingTopBottom8 justify-content-center">
+            <div class="col-4 d-flex text-end" style="margin-left: auto;">
+                <div class="kurumsalButton paddingBottom2-5">
+                    <div class="hakkimizdaOpen active hakkimizdaKurumsalBottom" aria-expanded="false" aria-controls="hakkimizdaTextOpen">About Us</div>
+                    <div class="vizyonumuzOpen"  aria-expanded="false" aria-controls="vizyonumuzTextOpen">Your Health</div>
+                    <div class="misyonumuzOpen noWrap"  aria-expanded="false" aria-controls="misyonumuzTextOpen">Your Wellness</div>
+                    <div class="partnersOpen"  aria-expanded="false" aria-controls="partnersTextOpen">Partners</div>
+                </div>
+            </div>
+            <div class="col-8 textJustify paddingRight10" id="hakkimizdaTextOpen">
+               <span class="titleGuvercin"> Vision:</span><br>
+                To be the most dependable provider of premium health & wellness 
+                products for each and everybody. <br><br><br>
+                <span class="titleGuvercin">Mission:</span><br>
+                To improve everyone's health and wellness while also enhancing their 
+                quality of life. We'll do this by creating goods that adhere to the strictest 
+                international standards and are constructed of the highest-grade 
+                components. <br><br><br>
+                <span class="titleGuvercin">Values:</span><br>
+                • We strive for excellence in everything we do, and we price our goods 
+                fairly. <br>
+                • Integrity exhibited by virtue of high moral standards.<br>
+                • Our customer base includes a variety of people.<br>
+                • Care for our clients, employees, and all of our partners.<br>
+                • Commitment to always putting our customers first because they are the 
+                reason we exist. <br>
+                • Learning through promoting the progress of knowledge
+            </div>
+            <div class="col-8 textJustify paddingRight10"  id="vizyonumuzTextOpen">
+                <span class="titleGuvercin">Your Health</span><br>
+                Güvercin aims to provide a complete range of healthcare solutions and 
+                products for the whole body, and for everybody. <br><br><br>
+                We offer high-quality healthcare products such as: <br>
+                • Medical Supplies.<br>
+                • Medical Consumables.<br>
+                • Hygiene Products.<br>
+                • Disinfectants and Sanitizers.<br>
+                • Health Products.<br>
+                • Healthy Food.<br>
+            </div>
+            <div class="col-8 textJustify paddingRight10" id="misyonumuzTextOpen">
+                <span class="titleGuvercin">Your Wellness</span><br><br>
+                Your long-term fitness depends on maintaining your current state of 
+                health. Whether you're a man or a woman, young or old, Güvercin has a 
+                variety of wellness options and goods to keep you in good form. We 
+                provide wellness goods of the highest caliber. 
+            </div>
+            <div class="col-8 textJustify" id="partnersTextOpen">
+                <span class="titleGuvercin">Partners</span><br><br>
+                At Güvercin, we understand that continuing to be successful depends on 
+                our dedication to offering the greatest quality health & wellness goods, 
+                enclosing them safely and hygienically, and bringing them to market at 
+                fair and competitive pricing. Because of this, we also appreciate the value 
+                of the relationships we have developed over time with some of the best 
+                businesses and experts in our industry. As proud partners, we collaborate 
+                closely with a number of carefully chosen businesses in nations all over 
+                the world, such as Saudi Arabia, Poland, Germany, Egypt, Algeria, Iraq, 
+                and Kuwait.
+            </div>
+         </div>
+        </div>
+    </section>
+    <footer class="footer paddingBottom1 paddingLeftRight3" style="background-color: #f4f4f4;">
+        <div class="container-xxl">
+            <div class="row paddingTop2">
+                <div class="col-5 text-end">
+                    <a class="hoverInntech" href="http://inntechyazilim.com/">
+                        <figure>
+                        <img class="iconFooter" src="/image/footer1.png" alt="">
+                       </figure>
+                    </a>
+                </div>
+                <div class="col-7 d-flex align-items-center align-self-center">
+                    <span class="inntech">
+                        2023 <a class="hoverInntech" href="http://inntechyazilim.com/">INNTECH</a> YAZILIM BİLİŞİM EĞİTİM TİC. LTD. ŞTİ
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>    
+<script>
+    /* Slideshow*/
+    let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            }
+</script>
+ <!--    Header Scroll    -->
+ <script>
+  window.addEventListener("scroll", function() {
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+        header.style.backgroundColor = "white";
+      } else {
+        header.classList.remove("sticky");
+        header.style.backgroundColor = "transparent";
+      }
+      
+      // Check if the user has scrolled to the top of the page
+      if (window.pageYOffset === 0) {
+        header.style.backgroundColor = "transparent";
+        header.style.boxShadow = "rgb(0 0 0 / 15%) 0px 0px 0px 0px";
+      } else {
+        header.style.backgroundColor = "white";
+        header.style.boxShadow = "rgb(0 0 0 / 15%) 0px 0px 8px 0px";
+      }
+    });
+
+
+
+
+      
+    
+</script>
+<!-- Opacity -->
+<script>
+$(document).ready(function(){
+    $("#checkbox").click(function(){
+        if($(this).is(":checked")){
+            $(".hakkimizda, .logo, .banner").not(".navbar *").css("opacity", "0.1");
+        } else {
+            $(".hakkimizda, .logo, .banner").css("opacity", "");
+        }
+    });
+});
+
+
+
+
+</script>
+<script>
+$(document).ready(function(){
+    $("#checkbox").click(function(){
+        if($(this).is(":checked")){
+            $(".hakkimizda, .logo, .banner, .footer").not(".navbar *").css("opacity", "0.1");
+        } else {
+            $(".hakkimizda, .logo, .banner, .footer").css("opacity", "");
+        }
+    });
+});
+</script>
+</html>
